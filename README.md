@@ -1,7 +1,5 @@
 # Elicited Linguistic Data Wrangler (eLDW)
-**Author:** Richard Griscom
-
-**Contact:** rgriscom@gmail.com
+**Author:** [Richard Griscom](https://rgris.com/) (Leiden University Centre for Linguistics)
 
 eLDW is a basic script which enables researchers to quickly process elicited linguistic data from a single speaker. When used as part of the [Digital Notebook Method](https://github.com/rgriscom/Digital-Notebook-Method), eLDW allows for the rapid creation of archivable time-aligned text annotations. Some of its notable features include:
 * Integration of text data and timecode data from different data sources
