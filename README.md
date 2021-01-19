@@ -21,17 +21,6 @@ There are three primary steps to using the eLDW notebook:
 3. Press the "Browse" button to upload your files.
   
   
-  
-  
-  
-  
-  
-      
-     
-  
-
-2.
-3.
 ## Requirements
 ### Text Data Input
 * .csv - Each row in the data should correspond to a single utterance, optionally with the first row serving as column names which can then be used as tier names for the output data. If paired with timecode data, each row of the text data should correspond to each pair of start and end times.
