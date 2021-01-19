@@ -40,3 +40,48 @@
   
   This dropdown menu selects the delimiter of the .csv used as input data.
   
+  
+  **First row of CSV is column titles**
+  
+  Possible values: Checked, unchecked
+  
+  Conditions: Text_Data_Source is .csv
+  
+  If checked, this option causes the script to process the first row of the .csv file as the column names for the text data.
+  
+  
+  **Expand duration of time segments**
+  
+  Possible values: Checked, unchecked
+  
+  Conditions: Any input data is selected for Timecode_Data_Source
+  
+  If checked, this option presents a slider which can be used to specify the number of milliseconds to subtract from start times and add to end times. This feature is designed specifically for use with timecode data that has been automatically segmented, e.g. by Praat's Annotate to TextGrid (silences) feature, and which might include start and end times which cut off some of the speech. 
+  
+ **Amount**
+  
+  Possible values: 0 - 100
+  
+  Conditions: The "Expand duration of time segments" option has been checked
+  
+  This slider specifies the number of milliseconds which are subtracted from start times and added to end times. If the expanded durations result in the overlap of two segments in a given file, then the expansion is abandoned and original timecode data are used. 
+  
+   **Sounding interval**
+  
+  Possible values: any
+  
+  Conditions: Text_Data_Source is .TextGrid
+  
+  This field specifies a string which is used by the script to distinguish between segments in a .TextGrid file which contain sound and those that do not. This feature is intended to be used together with the Praat Annotate to TextGrid (silences) feature, which produces "sounding" segments containing a particular string. If segments which do not contain a sound do not contain text, then this field can be left blank, and the script will include any non-empty segments as text data.
+  
+  **CSV Time Format:**
+  
+  Possible values: Seconds, Milliseconds 
+  
+  Conditions: Timecode_Data_source is .csv
+  
+  This dropdown menu specifies the type of timecode data included in the .csv file.  
+  
+  
+  
+  
