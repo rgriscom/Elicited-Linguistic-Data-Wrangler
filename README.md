@@ -16,8 +16,9 @@ There are three primary steps to using the eLDW notebook:
 1.  Choose the options in the first form and press the first play button. [Step 1 Option Descriptions](https://github.com/rgriscom/Elicited-Linguistic-Data-Wrangler/blob/main/Documentation/Step_1_Option_Descriptions.md)
 
 
-2. Fill out the information in the generated form and press the second play button. [Step 2 Option Descriptions]()
+2. Fill out the information in the generated form and press the second play button. [Step 2 Option Descriptions](https://github.com/rgriscom/Elicited-Linguistic-Data-Wrangler/blob/main/Documentation/Step_2_Option_Descriptions.md)
   
+3. Press the "Browse" button to upload your files.
   
   
   
