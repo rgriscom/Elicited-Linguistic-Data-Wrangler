@@ -15,26 +15,80 @@ There are three primary steps to using the eLDW notebook:
 
 1.  Choose the options in the first form and press the first play button.
 
-  **Operating_System:** Linux, MacOS, Windows
+  **Operating_System** 
+  
+ Possible values: Linux, MacOS, Windows
   
  This option is used to create the correct filepaths for the user operating system.
       
-  **Text_Data_Source:** .csv, .TextGrid, .eaf, .flextext, None
+  **Text_Data_Source** 
+  
+Possible values: .csv, .TextGrid, .eaf, .flextext, None
   
 This option selects the file format of the text data source and affects the options presented in step 2. If "None" is selected, files will be created with timecode data only. 
       
-  **Timecode_Data_Source:** .csv, .TextGrid, .eaf, .flextext, None
+  **Timecode_Data_Source** 
+  
+Possible values: .csv, .TextGrid, .eaf, .flextext, None
  
 This option selects the file format of the text data source and affects the options presented in step 2. If "None" is selected, files will be created with timecode data only. 
     
-  **Add_REFID_Tier:** Yes, No
+  **Add_REFID_Tier** 
+  
+Possible values: Checked, unchecked
 
-When the checkbox is ticked, this option adds a tier or column to the data that consists of a unique reference ID for each annotation or segment. The reference ID includes the filename and the annotation number in the format [filename] _ [annotation number]. For example, the 87th annotation of the file 20200127_RGb would be labeled 20200127_RGb_86. These reference IDs are useful for citing data in publications, as they enable researchers to cite individual annotations within a file.
+When the box is checked, this option adds a tier or column to the data that consists of a unique reference ID for each annotation or segment. The reference ID includes the filename and the annotation number in the format [filename] _ [annotation number]. For example, the 87th annotation of the file 20200127_RGb would be labeled 20200127_RGb_86. These reference IDs are useful for citing data in publications, as they enable researchers to cite individual annotations within a file.
 
 
 2. Fill out the information in the generated form and press the second play button. 
   
-      
+  **Column_slider** 
+  
+  Possible values: 1 - 10
+  
+  Conditions: Text_Data_Source is .csv, .TextGrid, or .eaf
+  
+  This option is used to indicate the number of tiers or columns which the user would like to extract from the Text_Data_Source. Changing the value changes the number of options presented below the slider in the generated form. 
+  
+  **Column [number] Name**
+  
+  Possible values: any
+  
+  Conditions: Text_Data_Source is .csv, .TextGrid, or .eaf. Number of columns selected with Column_slider.
+  
+  This field specifies the name of the numbered column or tier of text. The name entered here should be exactly the same as the one used in the Text_Data_Source in order to secure successful data extraction.
+  
+  **Column [number] Type**
+  
+  Possible values: Transcription, Translation, Notes
+  
+  Conditions: Text_Data_Source is .csv, .TextGrid, or .eaf. Number of columns selected with Column_slider.
+  
+  This field specifies the type of the numbered column or tier of text, which is required for producing .flextext output files. The transcription option produces text that is interpreted by FLEx as target linguistic data, the translation option produces text that is interpreted by FLEx as a free translation of the target linguistic data. Both of these options also produce text in the other output formats. The notes option does not produce any text in the .flextext output because FLEx does not support annotation-level notes, but it does produce text in the other output formats.
+  
+  **Column [number] ISO 639**
+  
+  Possible values: any ISO 639 code.
+  
+  Conditions: Text_Data_Source is .csv, .TextGrid, or .eaf. Number of columns selected with Column_slider.
+  
+  This field specifies the language of the number column or tier of text, which is required for producing .flextext and .eaf output files. The language should be entered as [ISO 639 code](https://iso639-3.sil.org/code_tables/639/data).
+  
+  
+  **CSV Delimiter**
+  
+  Possible values: Comma, Tab, Semi-colon
+  
+  Conditions: Text_Data_Source or Timecode_Data_Source is .csv
+  
+  This dropdown menu selects the delimiter of the .csv used as input data.
+  
+  
+  
+  
+  
+  
+  
       
      
   
@@ -57,6 +111,6 @@ When the checkbox is ticked, this option adds a tier or column to the data that 
 ### FLEx Output Requirements
 
 
-ISO 639 Language Codes: https://iso639-3.sil.org/code_tables/639/data
+
 
 
