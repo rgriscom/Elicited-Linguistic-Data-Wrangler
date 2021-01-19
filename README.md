@@ -36,7 +36,7 @@ The eLDW is suitable only for recordings of a single speaker.
 
 ## Output
 
-* .csv - The output .csv file includes the following data, sparated by commas: REF_ID (if selected in Step 1), start time, end time, Tier 1, Tier 2, Tier 3, etc.
+* .csv - The output .csv file includes the following data, sparated by commas: REF_ID (if selected in Step 1), start time, end time, text data tiers.
 * .TextGrid - The output .TextGrid includes the REF_ID tier as the first tier (if selected in Step 1), followed by the text data tiers.
 * .eaf - The output .eaf includes the REF_ID tier as the parent tier (if selected in Step 1), with all of the text data as child tiers.
 * .flextext - The output .flextext includes the tier selected as Transcription as linguistic data during Step 1, and any tiers selected as Translation are included as free translations of the linguistic data. The REF_ID is included as a free translation with the language code "zxx".
