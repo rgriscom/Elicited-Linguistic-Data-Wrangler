@@ -6,12 +6,8 @@ eLDW is a basic script which enables researchers to quickly process elicited lin
 * Multiple input and output formats accepted, including .csv, .TextGrid, .eaf, and .flextext
 * Batch processing
 
-## Google Colab Notebook
-eLDW is available as a [Google Colab Notebook](https://colab.research.google.com/drive/1k_mI4tPUCHVNq_m9_J62fcUVjcuHY7Qb?usp=sharing), which can be used without downloading or installing any software. You must have [a Google account](https://www.google.com/intl/en/account/about/) and be logged into the account in order to use the Colab Notebook. 
-
-
 ## How to use eLDW
-Open the notebook and follow the three primary steps outline in the instructions:
+eLDW is available as a [Google Colab Notebook](https://colab.research.google.com/drive/1k_mI4tPUCHVNq_m9_J62fcUVjcuHY7Qb?usp=sharing), which can be used without downloading or installing any software. You must have [a Google account](https://www.google.com/intl/en/account/about/) and be logged into the account in order to use the Colab Notebook. Open the notebook and follow the three primary steps outline in the instructions:
 
 1.  Choose the options in the first form and press the first play button. [Step 1 Option Descriptions](https://github.com/rgriscom/Elicited-Linguistic-Data-Wrangler/blob/main/Documentation/Step_1_Option_Descriptions.md)
 
