@@ -20,7 +20,7 @@ When the process is complete you will be able to download all of the output file
   
   
 ## Requirements
-The eLDW is suitable only for recordings of a single speaker.
+The eLDW is suitable only for recordings of a single speaker and utterance-level text data (i.e. free translations and transcriptions but not parsing or glossing).
 
 ### Text Data Input
 * .csv - ([Tidy data format](https://www.jstatsoft.org/article/view/v059i10)) Each row in the data should correspond to a single utterance, optionally with the first row serving as column names which can then be used as tier names for the output data. If the first row does not include column names, then columns must be specified in the generated form of Step 2. If paired with timecode data, each row of the text data should correspond to each pair of start and end times.
@@ -29,10 +29,10 @@ The eLDW is suitable only for recordings of a single speaker.
 * .flextext - Currently only the non-parsed text of .flextext files can be used as input text.
 
 ### Timecode Data Input
-* .csv - Each row in the data should include one column with a start time in ms and another column with an end time in ms
-* .TextGrid - The timecode data for all non-empty segments are used as input timecode.
-* .eaf - Only .eaf files which include annotations with identical timecode are currently supported.
-* .flextext - Currently only the non-parsed text of .flextext files can be used as input text.
+* .csv - The first column of data should include the start times for each segment, and the second column should include the end times.
+* .TextGrid - The timecode data for either all non-empty segments or those with the specified sounding interval text are used as input timecode. If multiple tiers are present in the .TextGrid file, then all tiers should have the same start time and end time for each segment.
+* .eaf - The start time and end time for each annotation are used as input timecode. If multiple tiers are present in the .eaf file, then all tiers should have the same start time and end time for each segment.
+* .flextext - The start time and end time of each "phrase" in the .flextext are used as input timecode. 
 
 ## Output
 
