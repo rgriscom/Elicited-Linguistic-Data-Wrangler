@@ -3,7 +3,7 @@
 
 eLDW is a basic script which enables researchers to quickly process elicited linguistic data from a single speaker. When used as part of the [Digital Notebook Method](https://github.com/rgriscom/Digital-Notebook-Method), eLDW allows for the rapid creation of archivable time-aligned text annotations. Some of its notable features include:
 * Integration of text data and timecode data from different data sources
-* Multiple input and output formats accepted, including .csv, .TextGrid, .eaf, and .flextext
+* Multiple input and output formats accepted, including .csv, .TextGrid (for use with [Praat](https://www.fon.hum.uva.nl/praat/)), .eaf (for use with [ELAN](https://archive.mpi.nl/tla/elan)), and .flextext (for use with [FLEx](https://software.sil.org/fieldworks/)).
 * Batch processing
 
 ## How to use eLDW
